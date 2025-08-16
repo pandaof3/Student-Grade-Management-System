@@ -1,0 +1,14 @@
+D:\code\C#\学生成绩管理系统\code\code\bin\Debug\net8.0\code.exe
+D:\code\C#\学生成绩管理系统\code\code\bin\Debug\net8.0\code.deps.json
+D:\code\C#\学生成绩管理系统\code\code\bin\Debug\net8.0\code.runtimeconfig.json
+D:\code\C#\学生成绩管理系统\code\code\bin\Debug\net8.0\code.dll
+D:\code\C#\学生成绩管理系统\code\code\bin\Debug\net8.0\code.pdb
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.AssemblyInfoInputs.cache
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.AssemblyInfo.cs
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.csproj.CoreCompileInputs.cache
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.dll
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\refint\code.dll
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.pdb
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\code.genruntimeconfig.cache
+D:\code\C#\学生成绩管理系统\code\code\obj\Debug\net8.0\ref\code.dll
