@@ -19,7 +19,7 @@ namespace StudentGradeManager.Services
                     return stu;
                 }
             }
-            //Console.WriteLine("Student not found");
+            Console.WriteLine("Student not found");
             return null;
         }
 
@@ -33,10 +33,10 @@ namespace StudentGradeManager.Services
                     matchingStudents.Add(stu);
                 }
             }
-            //if(matchingStudents.Count == 0)
-            //{
-            //    Console.WriteLine("Student not found!");
-            //}
+            if (matchingStudents.Count == 0)
+            {
+                Console.WriteLine("Student not found!");
+            }
             return matchingStudents;
         } 
         public void AddStudent(string Id, string name)
@@ -79,8 +79,13 @@ namespace StudentGradeManager.Services
             }
             stu.SetName(newName);
         }
-        public void AddStudentGrade(Student stu,string subject, decimal score)
+        public void AddStudentGrade(string Id,string subject, decimal score)
         {
+            Student? stu = FindStudentById(Id);
+            if (stu == null)
+            {
+                return;
+            }
             if (stu.GetGrades().ContainsKey(subject))
             {
                 Console.WriteLine("{0} already exists. If you want to modify the score, try " +
@@ -89,8 +94,13 @@ namespace StudentGradeManager.Services
             }
             stu.SetGrade(subject, score);
         }
-        public void ModifyStudentGrade(Student stu, string subject, decimal score)
+        public void ModifyStudentGrade(string Id, string subject, decimal score)
         {
+            Student? stu = FindStudentById(Id);
+            if (stu == null)
+            {
+                return;
+            }
             if (!stu.GetGrades().ContainsKey(subject))
             {
                 Console.WriteLine("subject not found. If you want to add score, try " +
@@ -98,8 +108,13 @@ namespace StudentGradeManager.Services
             }
             stu.SetGrade(subject, score);
         }
-        public decimal GetStudentAverage(Student stu)
+        public decimal GetStudentAverage(string Id)
         {
+            Student? stu = FindStudentById(Id);
+            if (stu == null)
+            {
+                return -1;
+            }
             return stu.CalcAverage();
         }
         public decimal GetCourseAverage(string subject)

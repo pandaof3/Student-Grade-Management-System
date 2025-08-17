@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|d:\\code\\c#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\services\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|solutionrelative:code\\services\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|d:\\code\\c#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|solutionrelative:code\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|d:\\code\\c#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|solutionrelative:code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|d:\\code\\c#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|solutionrelative:code\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|d:\\code\\c#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\services\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79715DEC-94D1-467B-822D-D299DBDC0989}|code\\code.csproj|solutionrelative:code\\services\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\models\\Student.cs",
               "RelativeDocumentMoniker": "code\\models\\Student.cs",
               "ToolTip": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\models\\Student.cs",
               "RelativeToolTip": "code\\models\\Student.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAUwAYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T05:10:56.811Z",
               "EditorCaption": ""
@@ -45,20 +45,20 @@
               "RelativeDocumentMoniker": "code\\program.cs",
               "ToolTip": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\program.cs",
               "RelativeToolTip": "code\\program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T14:29:12.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StudentManager.cs",
               "DocumentMoniker": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\services\\StudentManager.cs",
               "RelativeDocumentMoniker": "code\\services\\StudentManager.cs",
               "ToolTip": "D:\\code\\C#\\\u5B66\u751F\u6210\u7EE9\u7BA1\u7406\u7CFB\u7EDF\\code\\code\\services\\StudentManager.cs",
               "RelativeToolTip": "code\\services\\StudentManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T05:10:58.711Z",
               "EditorCaption": ""
