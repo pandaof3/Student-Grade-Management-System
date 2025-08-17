@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="knzfChceHIMNWTYjk42O">
+    <mxGraphModel dx="1213" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-1" target="e6GN_BBqMOfM3js-8YHQ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="120" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="77.5" y="350" width="85" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-3" target="e6GN_BBqMOfM3js-8YHQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-3" value="输入学生学号、科目、分数" style="whiteSpace=wrap;html=1;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="220" y="405" width="151.67" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-5" target="e6GN_BBqMOfM3js-8YHQ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-5" target="e6GN_BBqMOfM3js-8YHQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-5" value="学生存在" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="385" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-7" value="提示学生不存在" style="whiteSpace=wrap;html=1;fontSize=20;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="548" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-9" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="500" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-12" target="e6GN_BBqMOfM3js-8YHQ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e6GN_BBqMOfM3js-8YHQ-12" target="e6GN_BBqMOfM3js-8YHQ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-12" value="该科目&lt;div&gt;存在&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="385" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-14" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="410" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-15" value="提示科目&lt;div&gt;不存在&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="548" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-17" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="498" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-18" value="修改&lt;div&gt;科目成绩&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="725" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6GN_BBqMOfM3js-8YHQ-20" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="410" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
