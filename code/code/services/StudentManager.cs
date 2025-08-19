@@ -1,15 +1,35 @@
 ﻿using StudentGradeManager.Models;
+using StudentGradeManager.DataAccess;
 using System;
 namespace StudentGradeManager.Services
 {
     public class StudentManager
     {
         private List<Student> students;
+        private DataAccesser dataAccesser;
+        private string? _filePath;
         public StudentManager()
         {
             students = [];
+            dataAccesser = new DataAccesser();
         }
-
+        public void LoadData(string? filePath)
+        {
+            students.Clear();
+            if (filePath == "" || filePath==null)
+            {
+                students.AddRange(dataAccesser.LoadFromFile());
+            }
+            else
+            {
+                _filePath = filePath;
+                students.AddRange(dataAccesser.LoadFromFile(filePath));
+            }
+        }
+        public void SaveData()
+        {
+            dataAccesser.SaveToFile(students, _filePath);
+        }
         public Student? FindStudentById(string id)
         {
             foreach(Student stu in students)
@@ -37,6 +57,10 @@ namespace StudentGradeManager.Services
             {
                 Console.WriteLine("Student not found!");
             }
+            foreach(Student stu in matchingStudents)
+            {
+                stu.ShowMe();
+            }
             return matchingStudents;
         } 
         public void AddStudent(string Id, string name)
@@ -48,6 +72,7 @@ namespace StudentGradeManager.Services
             }
             Student stu = new Student(Id,name);
             students.Add(stu);
+            SaveData();
         }
         public void DeleteStudentById(string Id)
         {
@@ -57,6 +82,7 @@ namespace StudentGradeManager.Services
                 return;
             }
             students.Remove(stu);
+            SaveData();
         }
         public void ModifyStudentId(string oldId,string newId)
         {
@@ -67,6 +93,7 @@ namespace StudentGradeManager.Services
                 return;
             }
             stu.SetId(newId);
+            SaveData();
         }
 
         public void ModifyStudentName(string Id,string newName)
@@ -78,6 +105,7 @@ namespace StudentGradeManager.Services
                 return;
             }
             stu.SetName(newName);
+            SaveData();
         }
         public void AddStudentGrade(string Id,string subject, decimal score)
         {
@@ -92,7 +120,16 @@ namespace StudentGradeManager.Services
                     "ModifyStudentGrade()");
                 return;
             }
-            stu.SetGrade(subject, score);
+            if (score >= 0 && score < 100)
+            {
+                stu.SetGrade(subject, score);
+                SaveData();
+            }
+            else
+            {
+                Console.WriteLine("score must be between 0 and 100");
+                return;
+            }
         }
         public void ModifyStudentGrade(string Id, string subject, decimal score)
         {
@@ -105,8 +142,18 @@ namespace StudentGradeManager.Services
             {
                 Console.WriteLine("subject not found. If you want to add score, try " +
                     "AddStudentGrade()");
+                return;
             }
-            stu.SetGrade(subject, score);
+            if (score >= 0 && score <= 100)
+            {
+                stu.SetGrade(subject, score);
+                SaveData();
+            }
+            else
+            {
+                Console.WriteLine("score must be between 0 and 100");
+                return;
+            }
         }
         public decimal GetStudentAverage(string Id)
         {
@@ -159,10 +206,9 @@ namespace StudentGradeManager.Services
         {
             students.Sort();
         }
-        //测试用
         public void ShowStudentList()
         {
-            if (!students.Any())
+            if (students.Count==0)
             {
                 Console.WriteLine("No data");
             }

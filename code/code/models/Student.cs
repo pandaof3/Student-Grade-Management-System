@@ -1,10 +1,14 @@
 ﻿using System;
+using Newtonsoft.Json;
 namespace StudentGradeManager.Models
 {
     public class Student:IComparable<Student>
     {
+        [JsonProperty]
         private string id;
+        [JsonProperty]
         private string name;
+        [JsonProperty]
         private Dictionary<string, decimal> grades;
         public Student(string id,string name)
         {
@@ -13,7 +17,7 @@ namespace StudentGradeManager.Models
             this.grades = new Dictionary<string, decimal>();
         }
 
-        public string GetId()
+        public string? GetId()
         {
             return this.id;
         }
@@ -45,6 +49,11 @@ namespace StudentGradeManager.Models
         }
         public decimal CalcAverage()
         {
+            if (grades.Count == 0)
+            {
+                Console.Write("No grade data");
+                return 0;
+            }
             decimal sum = 0;
             foreach(var score in grades.Values)
             {
@@ -57,6 +66,16 @@ namespace StudentGradeManager.Models
             if (this == other) return 0;
             if (other == null) return -1;
             return other.CalcAverage().CompareTo(this.CalcAverage());
+        }
+        public void ShowMe()
+        {
+            Console.Write("{0}\t{1}\t", id, name);
+            foreach(var score in grades)
+            {
+                Console.Write(score.Key +  ": " + score.Value+"\t");
+            }
+            Console.Write("\n");
+            return;
         }
     }
 }

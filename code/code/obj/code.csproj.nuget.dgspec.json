@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\C#\\学生成绩管理系统\\code\\code\\code.csproj": {}
+    "D:\\code\\C#\\clone\\Student-Grade-Management-System\\code\\code\\code.csproj": {}
   },
   "projects": {
-    "D:\\code\\C#\\学生成绩管理系统\\code\\code\\code.csproj": {
+    "D:\\code\\C#\\clone\\Student-Grade-Management-System\\code\\code\\code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\C#\\学生成绩管理系统\\code\\code\\code.csproj",
+        "projectUniqueName": "D:\\code\\C#\\clone\\Student-Grade-Management-System\\code\\code\\code.csproj",
         "projectName": "code",
-        "projectPath": "D:\\code\\C#\\学生成绩管理系统\\code\\code\\code.csproj",
+        "projectPath": "D:\\code\\C#\\clone\\Student-Grade-Management-System\\code\\code\\code.csproj",
         "packagesPath": "C:\\Users\\邹铠阳\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\C#\\学生成绩管理系统\\code\\code\\obj\\",
+        "outputPath": "D:\\code\\C#\\clone\\Student-Grade-Management-System\\code\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
